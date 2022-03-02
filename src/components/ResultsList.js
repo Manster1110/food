@@ -3,6 +3,11 @@ import { View, Text, StyleSheet, FlatList } from 'react-native';
 import ResultsDetail from './ResultsDetail';
 
 const ResultsList = ({ catTitle, results }) => {
+
+  if (!results.length) {
+    return null;
+  }
+
   return (
     <View style={styles.container}>
       <Text style={styles.catTitle}>{catTitle}</Text>
