@@ -24,7 +24,9 @@ const styles = StyleSheet.create({
     marginBottom: 5
   },
   name: {
-    fontWeight: 'bold'
+    fontWeight: 'bold',
+    fontFamily: 'normal',
+    fontSize: 16
   }
 });
 
